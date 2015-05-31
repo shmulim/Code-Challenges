@@ -1,12 +1,12 @@
 function numberSearch(str) {
   numbers = str.split('').filter(function(i) {
-    return (!isNaN(i)) ? i : null;
+    if (!isNaN(i)){ return i }
   });
   numbers = numbers.reduce(function(a, b) {
     return parseInt(a) + parseInt(b);
   });
   letters = str.split('').filter(function(i) {
-    return (i.match(/[A-Za-z]/)) ? i : null;
+    if (i.match(/[A-Za-z]/)){ return i }
   });
   return Math.round(numbers / letters.length);
 }
