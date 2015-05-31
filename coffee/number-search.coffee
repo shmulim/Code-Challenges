@@ -12,5 +12,4 @@ numberSearch = (str) ->
    )
   Math.round( numbers / letters.length )
 
-
 numberSearch 'H3ello9-9' # 4
