@@ -1,4 +1,5 @@
 function numberSearch(str) {
+  var numbers, letters;
   numbers = str.split('').filter(function(i) {
     if (!isNaN(i)){ return i }
   });
