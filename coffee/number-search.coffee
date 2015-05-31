@@ -13,4 +13,4 @@ numberSearch = (str) ->
   Math.round( numbers / letters.length )
 
 
-alert numberSearch 'H3ello9-9' # 4
+numberSearch 'H3ello9-9' # 4
