@@ -1,14 +1,13 @@
-function digitize($num) {
+function digitize($num){
 
-    function numArr($i) {
-        settype($i, 'integer');
-        return ($i);
-    }
+function numArr($i){
+settype($i, 'integer');
+return($i);
+}
 
-    $to_str = (string) $num;
-    $to_arr = str_split($to_str);
-    $output = array_map("numArr", $to_arr);
-    print_r($output);
+$to_str = (string)$num;
+$to_arr = str_split($to_str);
+print_r( array_map("numArr", $to_arr) );
 }
 
 digitize(432423);
