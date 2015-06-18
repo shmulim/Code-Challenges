@@ -1,4 +1,4 @@
-array = [1, 2, 3, 4, 5]
+array = [1, 2, 3, 4, 5];
 
 function sum(array) {
     var arr = array.reduce(function(x, y) {
@@ -15,4 +15,4 @@ function multiply(array) {
 }
 
 sum(array); // 15
-multiply(array) // 120
+multiply(array); // 120
