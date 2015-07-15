@@ -1,6 +1,5 @@
 def digitize(arr)
-    new_arr = arr.split("")
-    new_arr.map { |a| a.to_i }
+    arr.split("").map { |a| a.to_i }
 end
 
 digitize("1234")
